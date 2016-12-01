@@ -1,6 +1,6 @@
 Rails.application.configure do
   config.middleware.insert_after 0, Rack::Auth::Basic do |u, p|
-    [u, p] == [ENV['USERNAME'], ENV['PASSWORD']]
+    [u, p] == [ENV['MFP_USERNAME'], ENV['MFP_PASSWORD']]
   end
   # Settings specified here will take precedence over those in config/application.rb.
 
