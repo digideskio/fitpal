@@ -1,4 +1,7 @@
 Rails.application.configure do
+  config.middleware.insert_after 0, Rack::Auth::Basic do |u, p|
+    [u, p] == [ENV['USERNAME'], ENV['PASSWORD']]
+  end
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
