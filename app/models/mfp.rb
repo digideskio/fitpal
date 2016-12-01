@@ -78,20 +78,9 @@ class MFP
     log_in
     session.visit '/account/my_goals/daily_nutrition_goals'
     sleep 5
-    # wait_for_ajax
-    # binding.remote_pry
     session.all('.mfp-input')[0].set(carbs)
     session.all('.mfp-input')[1].set(fat)
     session.all('.mfp-input')[2].set(protein)
     session.find(:css, 'a.button.save-changes').click
   end
-  #
-  # def self.wait_for_ajax
-  #   counter = 0
-  #   while session.execute_script("return $.active").to_i > 0
-  #     counter += 1
-  #     sleep(0.1)
-  #     raise "AJAX request took longer than 5 seconds." if counter >= 50
-  #   end
-  # end
 end
