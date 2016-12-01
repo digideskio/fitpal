@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="lang-en js-enabled"><head>
+<script async="" src="https://sb.scorecardresearch.com/beacon.js"></script><script type="text/javascript" async="" src="//s3.amazonaws.com/ki.js/49906/ape.js"></script><script id="facebook-jssdk" async="" src="//connect.facebook.net/en_US/sdk.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-TDCVCS"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"24ade29801","applicationID":"4152250","transactionName":"dA5YQkBeD1tcFx0AAlQOQ1hGHg9YXgxc","queueTime":0,"applicationTime":35,"ttGuid":"","agentToken":null,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQACVVNADAIFVlNXBw=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+  
+
+  <script type="text/javascript">
+//<![CDATA[
+var AUTH_TOKEN = "DRv8MTJzPQJUcJg9hT0bba2pCuunz5uqji093GNlTWE=";
+//]]>
+</script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <title>Free Calorie Counter, Diet &amp; Exercise Journal | MyFitnessPal.com</title>
+
+  <meta name="description" content="Free online calorie counter and diet plan. Lose weight by tracking your caloric intake quickly and easily.  Find nutrition facts for over 2,000,000 foods.">
+  <meta name="keywords" content="calorie counter, free diet journal, weight loss program, nutrition facts, online calorie counter, free diet plan, weight loss online, free calorie counter">
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="DRv8MTJzPQJUcJg9hT0bba2pCuunz5uqji093GNlTWE=" name="csrf-token">
+  <meta name="verify-v1" content="jKS1fjb9pK13luol4O+VFWO0OwEYaK4au88j0aRpQTM=">
+
+
+  <script type="text/javascript">
+    document.documentElement.className += " js-enabled";
+  </script>
+
+    <link href="https://d34yn14tavczy0.cloudfront.net/assets/sass/controllers/account-399efda2ffe97f594f927b7038c8ccfe.css" media="screen" rel="stylesheet" type="text/css">
+
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <!--[if IE 7]>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome-ie7.min.css">
+  <![endif]-->
+  <link href="https://d34yn14tavczy0.cloudfront.net/stylesheets/font-mfizz/font-mfizz.css" media="all" rel="stylesheet" type="text/css">
+
+
+  <script src="https://d34yn14tavczy0.cloudfront.net/assets/lscache.min-9fbe8309f2f87f6b4f6ad6a4adf65bd8.js" type="text/javascript"></script>
+  <script src="https://d34yn14tavczy0.cloudfront.net/assets/rsvp-latest.min-2b748699fce9427089a4aa5ba772eb30.js" type="text/javascript"></script>
+  <script src="https://d34yn14tavczy0.cloudfront.net/assets/moment-d4151c202f5fa2c85533fb84bb0a1690.js" type="text/javascript"></script>
+  <script src="https://d34yn14tavczy0.cloudfront.net/assets/mfp_user-0a2987c1706a7bb696316a965b23747b.js" type="text/javascript"></script>
+
+
+  
+
+    <script src="https://d34yn14tavczy0.cloudfront.net/assets/airbrake-shim-a4fa0d1ee08ad0b8bd5d9555a910bc0f.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    if ('Airbrake' in window) {
+      Airbrake.onload = function(client) {
+        client.setProject("110451", "762459368f3f1cf8feb1bb1404f00a91");
+
+        client.addFilter(function (notice) {
+          if (!(notice.errors && notice.errors[0])) { return notice; }
+
+          var airbrakeError = notice.errors[0];
+
+          // FILTERS BASED ON ERROR MESSAGE
+          // We don't want to log errors with following messages
+          var errorMessage = airbrakeError.message;
+
+          if (typeof errorMessage === 'string' && errorMessage !== '[object Object]') { // if we pass message param via object, sometimes Airbrakes converts it to string '[object Object]'
+            var ignoredMessages = [
+              'Script error',
+              'Script Error: 0x80072ee4',
+              'Can\'t execute code from a freed script',
+              'Error: Can\'t execute code from a freed script',               // file: http://www.myfitnesspal.com/food/search:6
+              'Programkoden kan ikke',
+              'Error: Programkoden kan ikke køres fra et frigjort script',    // file: http://www.myfitnesspal.com/da/food/diary/fdp6250:6
+              'Error: No se puede ejecutar código de un script liberado',     // file:  http://www.myfitnesspal.com.mx/photos/edit:8
+              'Error: Impossibile eseguire il codice da uno script liberato', // file: http://www.myfitnesspal.com/food/diary?date=2016-01-20:6
+              'Error: Não é possível executar o código a partir de um script liberado',
+              'Error: Não é possível executar códigos a partir de um script livre',
+              'Error: Impossible d\'exécuter le code à partir d\'un script libéré',    // file: http://www.myfitnesspal.com/:6
+              'Error: Kan programmacode niet uitvoeren vanuit een vrijgegeven script', // file: http://www.myfitnesspal.nl/food/diary/misja1973:6
+              'Error: 無法執行已被釋放的 Script',                                // file: http://www.myfitnesspal.com/zh-TW/account/profile_privacy:6
+              'Error: 不能执行已释放 Script 的代码',                             // file: http://www.myfitnesspal.com/user/charikagunawardena775/diary/add?meal=0:6
+              '_ is not defined'                                              // file:  http://www.myfitnesspal.com/user/robo370/diary/add?meal=0:1463
+            ];
+
+            for (var index in ignoredMessages) {
+              if (errorMessage.includes(ignoredMessages[index])) {
+                return null;
+              }
+            }
+
+          }
+
+          // FILTERS BASED ON FILE NAME
+          // We don't want to log errors from 3rd party scripts
+          if (airbrakeError.fileName || (airbrakeError.backtrace && airbrakeError.backtrace[0] && airbrakeError.backtrace[0].file)) {
+            var fileName = airbrakeError.fileName || airbrakeError.backtrace[0].file;
+            var ignoredFileNames = [
+              'http://www.googletagservices.com',
+              'https://googleads.g.doubleclick.net',
+              'http://partner.googleadservices.com',
+              'http://consent.truste.com',
+              'http://cdn.adrta.com/aa.js',
+              'http://cdncache-a.akamaihd.net',
+              'http://static.boostsaves.com',
+              'http://offerz4u.utop.it',
+              'Unknown script code:1',
+              'schema_generated_bindings',
+              'chrome://greasemonkey-modules/content/sandbox.js',
+              'mfpketo.user.js'
+            ];
+
+            for (var index in ignoredFileNames) {
+              if (fileName.includes(ignoredFileNames[index])) {
+                return null;
+              }
+            }
+          }
+
+          return notice;
+        });
+      }
+    }
+  </script>
+
+
+  <script>
+var MFP = (function (parent) {
+  parent.URL = (function () {
+    var me = {};
+    me.currentLocale = "en";
+    me.baseUrl = "http://www.myfitnesspal.com/";
+    me.httpsBaseUrl = "https://www.myfitnesspal.com/";
+    me.topLevelDomain = "com";
+    me.defaultLocale = "en";
+    me.getUrlPath = function(path) {
+      //if (me.topLevelDomain == me.currentLocale) {
+      if (me.defaultLocale == me.currentLocale) {
+        return (path[0] == '/' ? path.substring(1) : path);
+      } else {
+        return '/' + me.currentLocale + path;
+      }
+    }
+    me.getUrlAbsolute = function(path) {
+      return me.baseUrl + (path[0] == '/' ? path.substring(1) : path);
+    }
+    me.getHttpsUrlAbsolute = function(path) {
+      if (false) {
+        return me.getUrlAbsolute(path);
+      } else {
+        return me.httpsBaseUrl + (path[0] == '/' ? path.substring(1) : path);
+      }
+    }
+    me.valueFromQueryString = function(key) {
+      var queryParams = window.location.search.substring(1).split('&');
+      var re = new RegExp('^' + key  + '=');
+      var result;
+      queryParams.forEach(function(queryString, index) {
+        var match = re.test(queryString);
+        var operatorIndex;
+        if(match){
+          operatorIndex = queryString.search(/=/);
+          if(operatorIndex > -1){
+            result = queryString.substr(operatorIndex + 1, queryString.length - operatorIndex + 1);
+          }
+        }
+      });
+
+      return result;
+    }
+    return me;
+  }());
+  return parent;
+})(MFP || {});
+</script>
+
+  <script>
+var MFP = (function (parent) {
+  parent.DEBUG = false;
+  parent.DEVELOPMENT = false;
+
+  return parent;
+})(MFP || {});
+</script>
+
+
+  <script src="https://d34yn14tavczy0.cloudfront.net/assets/application-e72075a14f4d30da320ebcf3e1adfb73.js" type="text/javascript"></script>
+    <script src="https://d34yn14tavczy0.cloudfront.net/assets/shared/facebook-55bef1bed13adecf119c66bfdc53fe20.js" type="text/javascript"></script>
+    <script src="https://d34yn14tavczy0.cloudfront.net/assets/jquery/mfp_jquery_override-671de5b34658c3ab3039820cec881ffc.js" type="text/javascript"></script>
+
+
+
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  var variant = 'false' || null;
+  var doTrack = false;
+
+  _gaq.push(['_setAccount', 'UA-94924-2']);
+
+  if(typeof(_vis_opt_GA_track) == "function") { _vis_opt_GA_track(); }
+
+
+  // Make sure this GUID is in the 'on' or 'control' variant
+  if (doTrack && variant !== null && variant !== 'false') {
+    _gaq.push(['_setCustomVar', 5, 'mobile_optimized_page', variant, 2]);
+  }
+
+  _gaq.push(['_setDomainName', 'auto']);
+
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+  <link rel="canonical" href="http://www.myfitnesspal.com/account/login">
+
+
+  <link rel="alternate" href="http://www.myfitnesspal.com.br/account/login" hreflang="pt">
+  <link rel="alternate" href="http://www.myfitnesspal.com/account/login" hreflang="en">
+  <link rel="alternate" href="http://www.myfitnesspal.cn/account/login" hreflang="zh-Hans">
+  <link rel="alternate" href="http://www.myfitnesspal.de/account/login" hreflang="de">
+  <link rel="alternate" href="http://www.myfitnesspal.es/account/login" hreflang="es">
+  <link rel="alternate" href="http://www.myfitnesspal.fr/account/login" hreflang="fr">
+  <link rel="alternate" href="http://www.myfitnesspal.com.hk/account/login" hreflang="zh-Hant">
+  <link rel="alternate" href="http://www.myfitnesspal.it/account/login" hreflang="it">
+  <link rel="alternate" href="http://www.myfitnesspal.jp/account/login" hreflang="ja">
+  <link rel="alternate" href="http://www.myfitnesspal.co.kr/account/login" hreflang="ko">
+  <link rel="alternate" href="http://www.myfitnesspal.com.mx/account/login" hreflang="es">
+  <link rel="alternate" href="http://www.myfitnesspal.nl/account/login" hreflang="nl">
+  <link rel="alternate" href="http://www.myfitnesspal.se/account/login" hreflang="sv">
+  <link rel="alternate" href="http://www.myfitnesspal.com.tw/account/login" hreflang="zh-Hant">
+
+  <link rel="alternate" href="http://www.myfitnesspal.com/de/account/login" hreflang="de-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/es/account/login" hreflang="es-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/fr/account/login" hreflang="fr-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/pt/account/login" hreflang="pt-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/it/account/login" hreflang="it-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/nb/account/login" hreflang="nb-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/nl/account/login" hreflang="nl-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/ru/account/login" hreflang="ru-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/sv/account/login" hreflang="sv-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/da/account/login" hreflang="da-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/ko/account/login" hreflang="ko-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/ja/account/login" hreflang="ja-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/zh-CN/account/login" hreflang="zh-Hans-US">
+  <link rel="alternate" href="http://www.myfitnesspal.com/zh-TW/account/login" hreflang="zh-Hant-US">
+
+
+  
+
+    <meta property="al:ios:url" content="mfp://mfp">
+  <meta property="al:ios:app_store_id" content="341232718">
+  <meta property="al:ios:app_name" content="MyFitnessPal">
+
+
+</head>
+
+
+<body id="login" data-lang="en" class="&quot;body-header&quot;">
+
+<!-- ad bidder headers -->
+  <script type="text/javascript" src="//underarmour-d.openx.net/w/1.0/jstag?nc=17729925-MyFitnessPal" async="true"></script>
+
+<!-- Google Tag Manager -->
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+</script>
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-TDCVCS"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TDCVCS');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+<script type="text/javascript">current_locale = "en"; facebook_error_string ="Your Facebook account was not authorized.";</script>
+
+  
+
+
+  <!--[if lte IE 7]><div id="ie"><![endif]-->
+  <!--[if IE 6]><div id="ie6"><![endif]-->
+
+  <!-- Qualaroo for myfitnesspal.com -->
+  <script type="text/javascript">
+    var _kiq = _kiq || [];
+    (function(){
+      setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+      s.async = true; s.src = '//s3.amazonaws.com/ki.js/49906/ape.js'; f.parentNode.insertBefore(s, f);
+      }, 1);
+    })();
+  </script>
+
+
+  
+<div id="fb-root"></div>
+<script>
+  var FACEBOOK_LIMITED_PERMISSIONS = "email,user_birthday,user_friends";
+  var FACEBOOK_PERMISSIONS = FACEBOOK_LIMITED_PERMISSIONS.concat(",","publish_actions");
+  var FACEBOOK_API_VERSION = 'v2.2';
+  var facebook_error_string = "Your Facebook account was not authorized.";
+
+  // Additional JS functions here
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '186796388009496', // App ID
+      version    : FACEBOOK_API_VERSION,
+      channelUrl : '//www.myfitnesspal.com/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
+
+
+  
+
+  
+
+  <div class="header-wrap clearfix">
+
+  <div id="logo"><a href="http://www.myfitnesspal.com/">Calorie Counter</a></div>
+
+  <ul id="navTop" class="nav guest">
+  <li class="first">
+    <a class="fancylink" href="#fancy_login" data-sso-source="top_menu">Log In</a>
+  </li>
+  <li class="last"><a href="/account/create" class="signup-link" data-sso-source="top_menu">Sign Up</a></li>
+</ul>
+
+
+</div>
+
+
+  <div id="header">
+
+  <div id="nav-bg">
+  <ul id="nav" class="nav clearfix">
+
+    <li>
+  <a href="/welcome/learn_more" class="nav_button">About</a>
+</li>
+
+<li>
+  <a href="/food/calorie-chart-nutrition-facts" class="nav_button">Food</a>
+</li>
+
+<li>
+  <a href="/exercise/lookup" class="nav_button">Exercise</a>
+</li>
+
+
+    <li>
+      <a href="/apps" class="nav_button">Apps</a>
+    </li>
+
+    <li>
+      <a href="/forums" class="nav_button">Community</a>
+    </li>
+
+    <li>
+      <a href="http://blog.myfitnesspal.com" class="nav_button">Blog</a>
+    </li>
+
+      <li>
+        <a href="https://www.underarmour.com/en-us/best-sellers/g/326z?cid=MMF|REF|MFPal|Site|Nav|logged_out" class="ua-shop-link nav_button" data-gender="unknown" target="_blank"><img alt="Ua_shop_logo" src="http://d34yn14tavczy0.cloudfront.net/images/ua_shop_logo.png">Shop</a>
+      </li>
+
+      <li><a href="/premium?source=home_logged_out" class="nav_button premium-nav-link">Premium</a></li>
+
+  </ul>
+</div>
+
+
+  
+
+</div><!-- / #header -->
+
+
+
+
+  <div id="wrap">
+
+    <div id="content">
+
+      
+
+<div id="fb-root"></div>
+<script>
+  var FACEBOOK_LIMITED_PERMISSIONS = "email,user_birthday,user_friends";
+  var FACEBOOK_PERMISSIONS = FACEBOOK_LIMITED_PERMISSIONS.concat(",","publish_actions");
+  var FACEBOOK_API_VERSION = 'v2.2';
+  var facebook_error_string = "Your Facebook account was not authorized.";
+
+  // Additional JS functions here
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '186796388009496', // App ID
+      version    : FACEBOOK_API_VERSION,
+      channelUrl : '//www.myfitnesspal.com/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
+
+
+<form accept-charset="UTF-8" action="https://www.myfitnesspal.com/account/login" class="form login LoginForm" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="DRv8MTJzPQJUcJg9hT0bba2pCuunz5uqji093GNlTWE="></div>
+  <div class="member-login">
+    
+    <h2>Member Login</h2>
+    <ul class="list-unstyled">
+      <li>
+      </li>
+      <li class="username-field">
+          <label>Email Address:</label>
+          <input autocapitalize="none" class="text" id="username" name="username" placeholder="Email Address" size="12" type="text" value="">
+      </li>
+      <li class="password-field">
+        <label>Password:</label>
+        <input class="text" id="password" name="password" placeholder="Password" size="12" type="password" value="">
+      </li>
+      <li class="remember-field">
+        <input checked="checked" class="checkbox" id="remember_me" name="remember_me" type="checkbox" value="1">
+        <label for="remember_me">Remember me next time</label>
+      </li>
+      <li class="submit">
+        <input type="submit" value="Log In">
+      </li>
+      <li class="or or-static-page">
+        <span>or</span>
+        <div class="hr"></div>
+      </li>
+      <li>
+        <a href="#" class="facebook-login-css bttn btn-primary" id="facebook-login-css">Log in with Facebook</a>
+      </li>
+    </ul>
+  </div>
+  <ul class="forgot list-unstyled">
+    <li>
+      <a href="http://www.myfitnesspal.com/account/forgot_password" class="forgot-password-link" data-sso-location="login">Forgot password?</a>
+    </li>
+    <li>
+      Not a member yet? <a href="http://www.myfitnesspal.com/account/create" class="signup-link" data-sso-source="login">Sign up now!</a>
+    </li>
+  </ul>
+</form>
+<script src="https://d34yn14tavczy0.cloudfront.net/assets/stats/sso/signup_funnel-2d789492246fdb694bbd520a93935ca1.js" type="text/javascript"></script>
+
+
+    </div><!-- / #content -->
+
+  </div><!-- / #wrap -->
+
+  <section id="footer-wrapper">
+  <div class="uacf-logo-wrapper">
+      <a href="https://www.underarmour.com/en-us/?cid=MMF|REF|MFPal|Site|||" class="uacf-logo"><img alt="Under Armour ConnectedFitness" src="https://d34yn14tavczy0.cloudfront.net/assets/uacf_logo-31653ed4fac2ebb108a3f8bdc363a8a1.png"></a>
+  </div>
+  <div id="footer">
+    <div id="footerContent">
+        <div id="language_select">
+          <form accept-charset="UTF-8" action="/account/change_language" class="form settings_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="DRv8MTJzPQJUcJg9hT0bba2pCuunz5uqji093GNlTWE="></div>
+            <input id="originating_path" name="originating_path" type="hidden">
+            <select id="preference_language_setting" name="preference[language_setting]"><option value="en" selected="selected">English</option>
+<option value="de">Deutsch</option>
+<option value="es">Español</option>
+<option value="fr">Français</option>
+<option value="pt">Português (Brasil)</option>
+<option value="it">Italiano</option>
+<option value="nb">Norsk</option>
+<option value="nl">Nederlands</option>
+<option value="ru">Pусский</option>
+<option value="sv">Svensk</option>
+<option value="da">Dansk</option>
+<option value="ko">한국어</option>
+<option value="ja">日本語</option>
+<option value="zh-CN">中文(简体)</option>
+<option value="zh-TW">中文(台灣)</option></select>
+</form>
+        </div>
+
+      <ul class="bars">
+  <li>
+    <a href="http://www.myfitnesspal.com/">Calorie Counter</a>
+  </li>
+
+  <li>
+    <a href="http://blog.myfitnesspal.com">Blog</a>
+  </li>
+
+  <li>
+    <a href="https://account.underarmour.com/terms-and-conditions?locale=en_US">Terms</a>
+  </li>
+
+  <li>
+    <a href="https://account.underarmour.com/privacy?locale=en_US">Privacy</a>
+  </li>
+
+  <li>
+    <a href="http://www.myfitnesspal.com/welcome/contact_us">Contact Us</a>
+  </li>
+
+  <li>
+    <a href="http://www.myfitnesspal.com/api">API</a>
+  </li>
+
+  <li>
+    <a href="http://www.myfitnesspal.com/jobs">Jobs</a>
+  </li>
+
+  <li>
+    <a href="http://www.myfitnesspal.com/forums/show/13-website-suggestions-feedback">Feedback</a>
+  </li>
+
+  <li>
+    <a href="http://www.myfitnesspal.com/welcome/guidelines">Community Guidelines</a>
+  </li>
+
+    <li id="teconsent">
+      <script async="async" type="text/javascript" src="//consent.truste.com/notice?domain=myfitnesspal.com&amp;text=true&amp;c=teconsent&amp;"></script>
+    </li>
+</ul>
+
+
+      <p class="copy">Copyright 2005-2016 MyFitnessPal, Inc.</p>
+
+      <div style="display:none;">
+        <!-- Begin comScore Tag --><script>var _comscore = _comscore || [];_comscore.push({ c1: "2", c2: "15476338" });(function() {var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s, el);})();</script><noscript>&lt;img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=15476338&amp;cv=2.0&amp;cj=1" /&gt;</noscript><!-- End comScore Tag -->
+      </div>
+    </div><!-- / #footerContent -->
+  </div><!-- / #footer -->
+
+  <div id="loginform" style="display:none;">
+  <form accept-charset="UTF-8" action="https://www.myfitnesspal.com/account/login" class="form login" id="fancy_login" method="post" style="margin:0;"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="DRv8MTJzPQJUcJg9hT0bba2pCuunz5uqji093GNlTWE="></div>
+
+    <input type="hidden" name="premium_upsell_redirect" id="premium-upsell-redirect">
+
+  <div class="member-login">
+    <h2>Member Login</h2>
+    <ul>
+
+      <li>
+          <label>Email Address:</label>
+        <input name="username" type="text" class="text" tabindex="5" value="">
+      </li>
+      <li>
+        <label>Password:</label>
+        <input name="password" type="password" class="text" tabindex="6">
+      </li>
+      <li>
+        <input checked="checked" class="checkbox" id="remember_me" name="remember_me" tabindex="7" type="checkbox" value="1">
+        <label for="remember_me">Remember me next time</label>
+      </li>
+      <li>
+        <input class="expand-width" type="submit" value="Log In" tabindex="8">
+      </li>
+      <li>
+        <a href="http://www.myfitnesspal.com/account/forgot_password" class="forgot-password-link">Forgot password?</a>
+      </li>
+      <li class="or">
+        - or -
+      </li>
+      <li>
+        <a href="#" class="facebook-login-css" id="facebook-login-css">Log in with Facebook</a>
+      </li>
+      <li>
+        Not a member yet? <a href="http://www.myfitnesspal.com/account/create">Sign up now!</a>
+      </li>
+    </ul>
+  </div>
+</form></div>
+
+<script src="https://d34yn14tavczy0.cloudfront.net/assets/stats/sso/login_modal-328c6229a5fe597c0a1f70cac72fbe4f.js" type="text/javascript"></script>
+
+</section>
+
+
+
+
+  <!--[if lte IE 7]></div><![endif]-->
+  <!--[if IE 6]></div><![endif]-->
+
+
+
+  
+
+
+  
+  
+  
+  <script type="text/javascript" src="//cdn.dynamicyield.com/api/8766792/api_dynamic.js"></script></body></html>

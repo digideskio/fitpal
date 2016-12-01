@@ -1,0 +1,19 @@
+<h1>Fitpal</h1>
+
+<p>
+  Weight for today: <%= Weight.find_by(date: Date.today).try(:weight).to_f / 10 %>kg
+</p>
+<p>
+  Average weight past 7 days: <%= Weight.rolling_average %>
+</p>
+
+<p>Bodyfat (hardcoded): <%= Tdee::BODYFAT %></p>
+
+<p>TDEE for today: <%= Tdee.find_by(date: Date.today).try(:tdee) %></p>
+
+<p>
+  <%= button_to 'Pull in todays weight', pull_weight_path, method: :get %>
+  <%= button_to 'Set TDEE for today', calculate_tdee_path, method: :get %>
+  <%= button_to 'Set Workout day', set_training_day_macros_path, method: :get %>
+  <%= button_to 'Set Rest day', set_rest_day_macros_path, method: :get %>
+</p>
