@@ -1,5 +1,5 @@
 class Tdee < ApplicationRecord
-  BODYFAT = 18.freeze
+  BODYFAT = 17.freeze
 
   def self.calculate_for_weight(weight)
     370 + (21.6 * (weight.to_f * bodyfat_multiplier))

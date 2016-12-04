@@ -54,7 +54,7 @@ class MFP
     protein = (bodyweight_in_lbs * Tdee.bodyfat_multiplier) * 1.5
     protein_calories = protein * 4
     tdee_calorie_goal = Tdee.find_by(date: Date.today).tdee * 1.2 # sedentary = 1.2 multiplier
-    calorie_goal = tdee_calorie_goal * 1.2
+    calorie_goal = tdee_calorie_goal * 1.3
     calories_without_protein = (calorie_goal - protein_calories).to_f
     fat = calories_without_protein * 0.25 / 9
     carbs = calories_without_protein * 0.75 / 4
@@ -67,7 +67,7 @@ class MFP
     protein = (bodyweight_in_lbs * Tdee.bodyfat_multiplier) * 1.5
     protein_calories = protein * 4
     tdee_calorie_goal = Tdee.find_by(date: Date.today).tdee * 1.2 # sedentary = 1.2 multiplier
-    calorie_goal = tdee_calorie_goal * 0.8
+    calorie_goal = tdee_calorie_goal * 0.9
     calories_without_protein = (calorie_goal - protein_calories).to_f
     fat = calories_without_protein / 2 / 9
     carbs = calories_without_protein / 2 / 4
