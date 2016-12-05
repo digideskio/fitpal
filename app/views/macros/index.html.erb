@@ -16,8 +16,8 @@
   <%= button_to 'Set TDEE for today', calculate_tdee_path, method: :get %>
 </p>
 <p>
-<%= button_to 'Set Workout day', set_training_day_macros_path, method: :get %> (<%= MFP.training_day_macros.to_s %>)
+<%= button_to 'Set Workout day', set_training_day_macros_path, method: :get %> <% if Tdee.exists?(date: Date.today) %>(<%= MFP.training_day_macros.to_s %>)<% end %>
 </p>
 <p>
-  <%= button_to 'Set Rest day', set_rest_day_macros_path, method: :get %> (<%= MFP.rest_day_macros.to_s %>)
+  <%= button_to 'Set Rest day', set_rest_day_macros_path, method: :get %> <% if Tdee.exists?(date: Date.today) %>(<%= MFP.rest_day_macros.to_s %>)<% end %>
 </p>
