@@ -58,7 +58,7 @@ class MFP
     calories_without_protein = (calorie_goal - protein_calories).to_f
     fat = calories_without_protein * 0.25 / 9
     carbs = calories_without_protein * 0.75 / 4
-    {protein: protein, fat: fat, carbs: carbs}
+    {protein: protein.round(2), fat: fat.round(2), carbs: carbs.round(2)}
   end
 
   def self.rest_day_macros
@@ -71,7 +71,7 @@ class MFP
     calories_without_protein = (calorie_goal - protein_calories).to_f
     fat = calories_without_protein / 2 / 9
     carbs = calories_without_protein / 2 / 4
-    {protein: protein, fat: fat, carbs: carbs}
+    {protein: protein.round(2), fat: fat.round(2), carbs: carbs.round(2)}
   end
 
   def self.set_macros(protein:, fat:, carbs:)
