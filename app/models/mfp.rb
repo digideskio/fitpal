@@ -51,7 +51,7 @@ class MFP
   def self.training_day_macros
     bodyweight = Weight.rolling_average
     bodyweight_in_lbs = bodyweight * 2.20462
-    protein = (bodyweight_in_lbs * Tdee.bodyfat_multiplier) * 1.5
+    protein = (bodyweight_in_lbs * Tdee.bodyfat_multiplier) * 1.3
     protein_calories = protein * 4
     tdee_calorie_goal = Tdee.find_by(date: Date.today).tdee * 1.2 # sedentary = 1.2 multiplier
     calorie_goal = tdee_calorie_goal * 1.2
@@ -64,7 +64,7 @@ class MFP
   def self.rest_day_macros
     bodyweight = Weight.rolling_average
     bodyweight_in_lbs = bodyweight * 2.20462
-    protein = (bodyweight_in_lbs * Tdee.bodyfat_multiplier) * 1.5
+    protein = (bodyweight_in_lbs * Tdee.bodyfat_multiplier) * 1.3
     protein_calories = protein * 4
     tdee_calorie_goal = Tdee.find_by(date: Date.today).tdee * 1.2 # sedentary = 1.2 multiplier
     calorie_goal = tdee_calorie_goal * 0.8
