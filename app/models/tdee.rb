@@ -6,6 +6,6 @@ class Tdee < ApplicationRecord
   end
 
   def self.bodyfat_multiplier
-    (100.to_f - BODYFAT) / 100
+    (100.to_f - (ENV['BODYFAT'].to_f || BODYFAT)) / 100
   end
 end
