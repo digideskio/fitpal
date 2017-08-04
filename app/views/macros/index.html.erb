@@ -7,7 +7,7 @@
   Average weight past 7 days: <%= Weight.rolling_average %>
 </p>
 
-<p>Bodyfat (hardcoded): <%= Tdee::BODYFAT %></p>
+<p>Bodyfat (hardcoded): <%= ENV.fetch('BODYFAT', 17) %></p>
 
 <p>TDEE for today: <%= Tdee.find_by(date: Date.today).try(:tdee) %></p>
 
